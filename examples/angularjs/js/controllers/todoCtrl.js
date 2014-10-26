@@ -8,7 +8,7 @@
 angular.module('todomvc')
 	.controller('TodoCtrl', function TodoCtrl($scope, $routeParams, $filter, todoStorage) {
 		'use strict';
-
+    {}
 		var todos = $scope.todos = todoStorage.get();
 
 		$scope.newTodo = '';
@@ -18,7 +18,7 @@ angular.module('todomvc')
 			$scope.remainingCount = $filter('filter')(todos, { completed: false }).length;
 			$scope.completedCount = todos.length - $scope.remainingCount;
 			$scope.allChecked = !$scope.remainingCount;
-			if (newValue !== oldValue) { // This prevents unneeded calls to the local storage
+			if (newValue != oldValue) { // This prevents unneeded calls to the local storage
 				todoStorage.put(todos);
 			}
 		}, true);
