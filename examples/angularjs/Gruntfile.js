@@ -4,6 +4,14 @@ module.exports = function(grunt) { 
     jshint: {
       files: ['js/**/*.js', 'test/unit/*.js'],
       options: {
+        //curly: true,
+        //eqeqeq: true,
+        //noempty: true,
+        // quotmark: "single",
+        //quotmark: true,
+        //undef: true,
+        //unused: true,
+        //strict: true
       }
     },
   });
