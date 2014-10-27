@@ -12,7 +12,8 @@ module.exports = function(grunt) { 
         //undef: true,
         //predef: ["localStorage", "module"],
         //unused: true,
-        //strict: true
+        //strict: true,
+        //maxcomplexity: 2
       }
     },
   });
