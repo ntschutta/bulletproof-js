@@ -10,6 +10,7 @@ module.exports = function(grunt) { 
         // quotmark: "single",
         //quotmark: true,
         //undef: true,
+        //predef: ["localStorage", "module"],
         //unused: true,
         //strict: true
       }
