@@ -25,11 +25,16 @@ module.exports = function(grunt) { 
         'report': ['js/**/*.js', 'test/**/*.js']
         }
       }
+    },
+    karma: {
+      unit: {
+        configFile: 'test/config/karma.conf.js'
+      }
     }
   });
-
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-plato');
+  grunt.loadNpmTasks('grunt-karma');
 
   grunt.registerTask('metrics', ['jshint', 'plato']);
   grunt.registerTask('default', ['jshint']);
