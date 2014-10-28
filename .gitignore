@@ -5,3 +5,4 @@ node_modules
 /browser-tests/npm-debug.log
 /examples/angularjs/test/unit/npm-debug.log
 /examples/angularjs/test/config/npm-debug.log
+/examples/angularjs/npm-debug.log
