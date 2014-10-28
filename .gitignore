@@ -2,3 +2,4 @@ node_modules
 /bower_components
 /dist
 /examples/angularjs/report
+/browser-tests/npm-debug.log
