@@ -3,3 +3,4 @@ node_modules
 /dist
 /examples/angularjs/report
 /browser-tests/npm-debug.log
+/examples/angularjs/test/unit/npm-debug.log
