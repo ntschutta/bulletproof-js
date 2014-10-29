@@ -35,9 +35,25 @@ module.exports = function(grunt) { 
       src: ['app.js', 'js/**/*.js'],
       options: {
         specs: 'test/unit/*Spec.js',
-        vendor: ['bower_components/angular/angular.js',
-        'bower_components/angular-route/angular-route.js',
-        'test/lib/angular-mocks.js']
+        vendor: [
+          'bower_components/angular/angular.js',
+          'bower_components/angular-route/angular-route.js',
+          'test/lib/angular-mocks.js'],
+        template: require('grunt-template-jasmine-istanbul'),
+        templateOptions: {
+          coverage: 'test/coverage/coverage.json',
+          report: [
+            {type:'html',options: {dir: 'test/coverage/html'}},
+            {type:'text',options: {dir: 'test/coverage/text/'}},
+            {type:'text-summary'}
+          ],
+          thresholds: {
+            lines: 75,
+            statements: 75,
+            branches: 75,
+            functions: 90
+          }
+        }
       }
     }
   });
