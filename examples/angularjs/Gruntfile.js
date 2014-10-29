@@ -30,12 +30,23 @@ module.exports = function(grunt) { 
       unit: {
         configFile: 'test/config/karma.conf.js'
       }
+    },
+    jasmine: {
+      src: ['app.js', 'js/**/*.js'],
+      options: {
+        specs: 'test/unit/*Spec.js',
+        vendor: ['bower_components/angular/angular.js',
+        'bower_components/angular-route/angular-route.js',
+        'test/lib/angular-mocks.js']
+      }
     }
   });
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-plato');
   grunt.loadNpmTasks('grunt-karma');
+  grunt.loadNpmTasks('grunt-contrib-jasmine');
 
   grunt.registerTask('metrics', ['jshint', 'plato']);
   grunt.registerTask('default', ['jshint']);
+  grunt.registerTask('test', ['jasmine']);
 };
