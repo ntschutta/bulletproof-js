@@ -22,7 +22,7 @@ module.exports = function(grunt) { 
         //   jshint : false
         // },
         files: {
-        'report': ['js/**/*.js', 'test/**/*.js']
+        'report': ['js/**/*.js', 'test/unit/*.js']
         }
       }
     },
@@ -65,4 +65,6 @@ module.exports = function(grunt) { 
   grunt.registerTask('metrics', ['jshint', 'plato']);
   grunt.registerTask('default', ['jshint']);
   grunt.registerTask('test', ['jasmine']);
+
+  grunt.registerTask('all', ['jshint', 'plato']);
 };
