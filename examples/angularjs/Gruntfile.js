@@ -66,5 +66,5 @@ module.exports = function(grunt) { 
   grunt.registerTask('default', ['jshint']);
   grunt.registerTask('test', ['jasmine']);
 
-  grunt.registerTask('all', ['jshint', 'plato']);
+  grunt.registerTask('all', ['metrics', 'test']);
 };
