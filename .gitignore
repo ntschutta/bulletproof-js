@@ -1,8 +1,10 @@
 node_modules
 /bower_components
 /dist
-/examples/angularjs/report
-/browser-tests/npm-debug.log
-/examples/angularjs/test/unit/npm-debug.log
 /examples/angularjs/test/config/npm-debug.log
+/examples/angularjs/test/unit/npm-debug.log
+/browser-tests/npm-debug.log
+/examples/angularjs/.grunt/
+/examples/angularjs/_SpecRunner.html
 /examples/angularjs/npm-debug.log
+/examples/angularjs/report/
