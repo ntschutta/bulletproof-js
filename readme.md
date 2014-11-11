@@ -1,4 +1,4 @@
-# ![Bulletproof JavaScript]
+#Bulletproof JavaScript#
 
 Starting with the Angular example from [TodoMVC](http://todomvc.com), we'll walk through a set of tools that make developing JavaScript applications almost enjoyable.
 
