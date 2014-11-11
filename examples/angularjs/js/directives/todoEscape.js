@@ -6,7 +6,7 @@
  */
 angular.module('todomvc')
 	.directive('todoEscape', function () {
-		'use strict';
+		'use strict'; 
 
 		var ESCAPE_KEY = 27;
 
