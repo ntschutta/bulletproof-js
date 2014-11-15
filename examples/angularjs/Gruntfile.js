@@ -4,16 +4,9 @@ module.exports = function(grunt) { 
     jshint: {
       files: ['js/**/*.js', 'test/unit/*.js'],
       options: {
-        //curly: true,
-        //eqeqeq: true,
-        //noempty: true,
-        // quotmark: "single",
-        //quotmark: true,
-        //undef: true,
-        //predef: ["localStorage", "module"],
-        //unused: true,
-        //strict: true,
-        //maxcomplexity: 2
+        '-W117': true,
+        jshintrc: true
+        //jshintrc: '../../.jshintrc'
       }
     },
   });
