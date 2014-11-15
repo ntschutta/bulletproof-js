@@ -8,3 +8,5 @@ node_modules
 /examples/angularjs/_SpecRunner.html
 /examples/angularjs/npm-debug.log
 /examples/angularjs/report/
+/examples/angularjs/test/coverage/
+/examples/angularjs/test/unit/coverage/
