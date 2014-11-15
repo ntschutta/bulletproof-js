@@ -5,8 +5,9 @@ module.exports = function(grunt) { 
       files: ['js/**/*.js', 'test/unit/*.js'],
       options: {
         '-W117': true,
-        jshintrc: true
+        jshintrc: true,
         //jshintrc: '../../.jshintrc'
+        reporter: require('jshint-stylish')
       }
     },
   });
