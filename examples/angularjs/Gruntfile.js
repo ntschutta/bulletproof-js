@@ -57,14 +57,15 @@ module.exports = function(grunt) { 
       }
     },
     uglify: {
-    options: {
-      banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
-    },
-    build: {
-      src: ['js/app.js', 'js/controllers/*.js', 'js/directives/*.js', 'js/services/*.js'],
-      dest: 'js/dist/output.min.js'
+      options: {
+        banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
+      },
+      build: {
+        src: ['js/app.js', 'js/controllers/*.js',
+          'js/directives/*.js', 'js/services/*.js'],
+        dest: 'js/dist/output.min.js'
+      }
     }
-  }
   });
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-plato');
