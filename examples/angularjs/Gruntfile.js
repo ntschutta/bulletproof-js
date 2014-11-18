@@ -55,12 +55,22 @@ module.exports = function(grunt) { 
           }
         }
       }
+    },
+    uglify: {
+    options: {
+      banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
+    },
+    build: {
+      src: ['js/app.js', 'js/controllers/*.js', 'js/directives/*.js', 'js/services/*.js'],
+      dest: 'js/dist/output.min.js'
     }
+  }
   });
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-plato');
   grunt.loadNpmTasks('grunt-karma');
   grunt.loadNpmTasks('grunt-contrib-jasmine');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
 
   grunt.registerTask('metrics', ['jshint', 'plato']);
   grunt.registerTask('default', ['jshint']);
