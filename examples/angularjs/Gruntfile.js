@@ -51,7 +51,7 @@ module.exports = function(grunt) { 
             lines: 75,
             statements: 75,
             branches: 75,
-            functions: 90
+            functions: 75
           }
         }
       }
@@ -63,7 +63,7 @@ module.exports = function(grunt) { 
       build: {
         src: ['js/app.js', 'js/controllers/*.js',
           'js/directives/*.js', 'js/services/*.js'],
-        dest: 'js/dist/output.min.js'
+        dest: 'build/output.min.js'
       }
     }
   });
@@ -76,6 +76,7 @@ module.exports = function(grunt) { 
   grunt.registerTask('metrics', ['jshint', 'plato']);
   grunt.registerTask('default', ['jshint']);
   grunt.registerTask('test', ['jasmine']);
+  grunt.registerTask('build', ['jasmine', 'uglify']);
 
-  grunt.registerTask('all', ['metrics', 'test']);
+  grunt.registerTask('all', ['metrics', 'build']);
 };
