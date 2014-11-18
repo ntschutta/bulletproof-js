@@ -65,6 +65,25 @@ module.exports = function(grunt) { 
           'js/directives/*.js', 'js/services/*.js'],
         dest: 'build/output.min.js'
       }
+    },
+    concat: {
+      options: {
+        separator: ';',
+        stripBanners: true,
+        banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' +
+        '<%= grunt.template.today("yyyy-mm-dd") %> */ \n',
+      },
+      dist: {
+        src: ['js/app.js', 'js/controllers/*.js',
+          'js/directives/*.js', 'js/services/*.js'],
+        dest: 'build/output.js'
+      }
+    },
+
+    watch: {
+      files: ['js/app.js', 'js/controllers/*.js',
+        'js/directives/*.js', 'js/services/*.js'],
+      tasks: ['jshint']
     }
   });
   grunt.loadNpmTasks('grunt-contrib-jshint');
@@ -72,6 +91,8 @@ module.exports = function(grunt) { 
   grunt.loadNpmTasks('grunt-karma');
   grunt.loadNpmTasks('grunt-contrib-jasmine');
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
   grunt.registerTask('metrics', ['jshint', 'plato']);
   grunt.registerTask('default', ['jshint']);
