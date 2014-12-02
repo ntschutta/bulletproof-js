@@ -6,8 +6,8 @@
  */
 angular.module('todomvc')
 	.directive('todoFocus', function todoFocus($timeout) {
-		'use strict';
-
+		
+    var foo;
 		return function (scope, elem, attrs) {
 			scope.$watch(attrs.todoFocus, function (newVal) {
 				if (newVal) {
