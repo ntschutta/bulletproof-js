@@ -22,7 +22,7 @@ module.exports = function(grunt) { 
         //   jshint : false
         // },
         files: {
-        'report': ['js/**/*.js', 'test/**/*.js']
+        'report': ['js/**/*.js', 'test/unit/*.js']
         }
       }
     }
