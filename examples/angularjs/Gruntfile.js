@@ -7,7 +7,7 @@ module.exports = function(grunt) { 
         reporterOutput: "",
         '-W117': true,
         jshintrc: true,
-        //jshintrc: '../../.jshintrc'
+        //jshintrc: '.jshintrc',
         reporter: require('jshint-stylish')
       }
     },
