@@ -4,6 +4,7 @@ module.exports = function(grunt) { 
     jshint: {
       files: ['js/**/*.js', 'test/unit/*.js'],
       options: {
+        reporterOutput: "",
         //curly: true,
         //eqeqeq: true,
         //noempty: true,
