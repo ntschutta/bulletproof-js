@@ -17,12 +17,15 @@
     "grunt-contrib-jshint": "^0.10.0",
     "grunt-karma": "^0.9.0",
     "grunt-plato": "^1.3.0",
-    "jasmine-core": "^2.5.2",
+    "jasmine-core": "^2.99.1",
     "karma": "^0.12.24",
     "karma-chrome-launcher": "^0.1.12",
     "karma-firefox-launcher": "^1.0.1",
     "karma-jasmine": "^0.1.6",
     "karma-phantomjs-launcher": "^0.1.4",
     "plato": "^1.2.0"
+  },
+  "dependencies": {
+    "socket.io": "^2.2.0"
   }
 }
