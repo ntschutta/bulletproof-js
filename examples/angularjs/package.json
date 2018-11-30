@@ -7,21 +7,28 @@
     "test": "test"
   },
   "scripts": {
-    "test": "karma start config/karma.conf.js"
+    "test": "jasmine test/unit/*.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-contrib-jasmine": "^0.8.1",
-    "grunt-contrib-jshint": "^0.10.0",
-    "grunt-karma": "^0.9.0",
+    "grunt": "^1.0.3",
+    "grunt-contrib-jasmine": "^2.0.3",
+    "grunt-contrib-jshint": "^2.0.0",
+    "grunt-karma": "^3.0.1",
     "grunt-plato": "^1.3.0",
-    "grunt-template-jasmine-istanbul": "^0.3.0",
-    "karma": "^0.12.24",
+    "grunt-template-jasmine-istanbul": "^0.5.0",
+    "istanbul": "^0.4.5",
+    "jasmine": "^3.3.0",
+    "jasmine-console-reporter": "^3.1.0",
+    "jasmine-node": "^1.16.2",
+    "jasmine-supertest": "^1.0.0",
+    "karma": "^3.1.1",
     "karma-chrome-launcher": "^0.1.5",
     "karma-jasmine": "^0.1.5",
-    "karma-phantomjs-launcher": "^0.1.4",
-    "plato": "^1.2.0"
+    "karma-phantomjs-launcher": "^1.0.4",
+    "mocha": "^5.2.0",
+    "plato": "^1.2.0",
+    "supertest": "^3.3.0"
   }
 }
